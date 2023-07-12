@@ -41,7 +41,7 @@ class PokemonViewModel: PokemonDelegate, ImageDelegate, ObservableObject{
     
     func startTimer() {
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 7, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { _ in
                 self.getOnePokemon()
               }
         timer?.fire()
